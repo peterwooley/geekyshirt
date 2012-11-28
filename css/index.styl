@@ -8,14 +8,14 @@ body
 
 .header
   background: #eee
-  padding: 20px
+  padding: 10px
   border-bottom:1px solid #ddd
   margin-bottom:20px;
   clearfix()
 
   h1
     float: left
-    font-size: 32px
+    font-size: 26px
     font-weight: bold
     margin-right:8px
 
@@ -23,52 +23,81 @@ body
     padding-top: 12px
     float: left
 
-@media (min-width: 480px)
-  .container
-    max-width: 768px
-    margin: 0 auto
+.container
+  max-width: 960px
+  margin: 0 auto
+  padding: 0 20px
 
-  .calendar
-    counter-reset: li
+.calendar
+  counter-reset: li
 
-    li
-      box-sizing: border-box
-      border: 1px solid #aaa
-      padding: 5px
-      font-size: 14px
-      float: left
-      width: 14%
+  li
+    box-sizing: border-box
+    padding: 5px
+    font-size: 14px
+    float: left
+    width: 33.333333333%
+    position: relative
+    overflow:hidden
+
+    a
+      background: #eee
+      display: block
       position:relative
-      height: 100px
+      border: 1px solid #aaa
       border-radius: 4px
-      
-      span
-        background: rgba(255,255,255,.45)
-        box-sizing: border-box
-        position: absolute
-        bottom: 0
-        left: 0
-        width: 100%
-        padding: 5px
-        text-align: center
+      height: 100px
+      overflow:hidden
+    
+    span
+      background: #d6d6d6
+      border-top:1px solid rgba(255,255,255,.4)
+      box-sizing: border-box
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      padding: 5px
+      text-align: center
+      font-size: 12px
+      border-bottom-left-radius: 3px
+      border-bottom-right-radius: 3px
+      color: #111
+      text-shadow: 0 1px 0 rgba(255,255,255,.6)
 
-      img
-        max-width: 100%
-        max-height: 80%
+    img
+      max-width:100%
+      border-radius:4px
 
-      &:first-child
-        margin-left:70%
+    &:before
+      content:counter(li)
+      counter-increment: li
+      position: absolute
+      right: 6px
+      top: 6px
+      background: #eee
+      padding: 5px
+      border: 1px solid #aaa
+      border-top: none
+      border-right: none
+      border-bottom-left-radius: 4px
+      border-top-right-radius: 4px
+      z-index: 2
 
-      &:before
-        content:counter(li)
-        counter-increment: li
-        position: absolute
-        right: 0
-        top: 0
-        background: #eee
-        padding: 5px
-        border: 1px solid #aaa
-        border-top: none
-        border-right: none
-        border-bottom-left-radius: 4px
-        border-top-right-radius: 4px
+@media (min-width: 420px)
+  .calendar li
+    width: 25%
+
+  .header h1
+    font-size: 32px
+
+@media (min-width: 550px)
+  .calendar li
+    width: 20%
+
+@media (min-width: 700px)
+  .calendar li
+    width: 14%
+
+    &:first-child
+      margin-left: 70%
