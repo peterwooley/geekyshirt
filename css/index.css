@@ -110,6 +110,7 @@ body {
 .header h1 {
   float: left;
   font-size: 26px;
+  letter-spacing: -1px;
   font-weight: bold;
   margin-right: 8px;
 }
@@ -135,16 +136,27 @@ body {
   overflow: hidden;
 }
 .calendar li a {
-  background: #eee;
+  background-size: 100%;
+  background-repeat: no-repeat;
   display: block;
   position: relative;
-  border: 1px solid #aaa;
+  border: 1px solid #567;
   border-radius: 4px;
-  height: 100px;
+  height: 120px;
   overflow: hidden;
 }
-.calendar li span {
+.calendar li.need a {
+  border-color: #aaa;
+}
+.calendar li.need a span {
   background: #d6d6d6;
+}
+.calendar li.need:before {
+  background: #eee;
+  border-color: #aaa;
+}
+.calendar li span {
+  background: #abc;
   border-top: 1px solid rgba(255,255,255,0.4);
   box-sizing: border-box;
   position: absolute;
@@ -154,8 +166,8 @@ body {
   padding: 5px;
   text-align: center;
   font-size: 12px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   color: #111;
   text-shadow: 0 1px 0 rgba(255,255,255,0.6);
 }
@@ -169,13 +181,13 @@ body {
   position: absolute;
   right: 6px;
   top: 6px;
-  background: #eee;
+  background: #dde7ee;
   padding: 5px;
-  border: 1px solid #aaa;
+  border: 1px solid #567;
   border-top: none;
   border-right: none;
   border-bottom-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-right-radius: 3px;
   z-index: 2;
 }
 @media (min-width: 420px) {
@@ -194,6 +206,10 @@ body {
 @media (min-width: 700px) {
   .calendar li {
     width: 14%;
+  }
+  .calendar li a {
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
   .calendar li:first-child {
     margin-left: 70%;

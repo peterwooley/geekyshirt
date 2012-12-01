@@ -1,6 +1,13 @@
 @import 'reset'
 @import 'clearfix'
 
+$have-border = #567
+$have-background = #abc
+$have-day = #dde7ee
+$need-border = #aaa
+$need-background = #d6d6d6
+$need-day = #eee
+
 global-reset()
 
 body
@@ -16,6 +23,7 @@ body
   h1
     float: left
     font-size: 26px
+    letter-spacing: -1px
     font-weight: bold
     margin-right:8px
 
@@ -41,16 +49,27 @@ body
     overflow:hidden
 
     a
-      background: #eee
+      background-size: 100%
+      background-repeat: no-repeat
       display: block
       position:relative
-      border: 1px solid #aaa
+      border: 1px solid $have-border
       border-radius: 4px
-      height: 100px
-      overflow:hidden
+      height: 120px
+      overflow: hidden
+
+    &.need a
+      border-color: $need-border
+
+      span
+        background: $need-background
+
+    &.need:before
+      background: $need-day
+      border-color: $need-border
     
     span
-      background: #d6d6d6
+      background: $have-background
       border-top:1px solid rgba(255,255,255,.4)
       box-sizing: border-box
       position: absolute
@@ -60,8 +79,8 @@ body
       padding: 5px
       text-align: center
       font-size: 12px
-      border-bottom-left-radius: 3px
-      border-bottom-right-radius: 3px
+      border-bottom-left-radius: 2px
+      border-bottom-right-radius: 2px
       color: #111
       text-shadow: 0 1px 0 rgba(255,255,255,.6)
 
@@ -75,14 +94,15 @@ body
       position: absolute
       right: 6px
       top: 6px
-      background: #eee
+      background: $have-day
       padding: 5px
-      border: 1px solid #aaa
+      border: 1px solid $have-border
       border-top: none
       border-right: none
       border-bottom-left-radius: 4px
-      border-top-right-radius: 4px
+      border-top-right-radius: 3px
       z-index: 2
+
 
 @media (min-width: 420px)
   .calendar li
@@ -98,6 +118,11 @@ body
 @media (min-width: 700px)
   .calendar li
     width: 14%
+    
+    a
+      padding-top:5%
+      padding-bottom:5%
+
 
     &:first-child
       margin-left: 70%
