@@ -150,6 +150,7 @@ body {
 }
 .calendar li.need a span {
   background: #d6d6d6;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.8);
 }
 .calendar li.need:before {
   background: #eee;
@@ -169,7 +170,7 @@ body {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   color: #111;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.4);
 }
 .calendar li img {
   max-width: 100%;
