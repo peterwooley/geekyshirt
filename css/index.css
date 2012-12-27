@@ -140,7 +140,7 @@ body {
   background-repeat: no-repeat;
   display: block;
   position: relative;
-  border: 1px solid #567;
+  border: 1px solid #676;
   border-radius: 4px;
   height: 120px;
   overflow: hidden;
@@ -156,7 +156,7 @@ body {
   border-color: #aaa;
 }
 .calendar li span {
-  background: #abc;
+  background: #7a7;
   border-top: 1px solid rgba(255,255,255,0.4);
   box-sizing: border-box;
   position: absolute;
@@ -183,7 +183,7 @@ body {
   top: 6px;
   background: #dde7ee;
   padding: 5px;
-  border: 1px solid #567;
+  border: 1px solid #676;
   border-top: none;
   border-right: none;
   border-bottom-left-radius: 4px;
