@@ -31,10 +31,41 @@ body
     padding-top: 12px
     float: left
 
+  .logo
+    display:none
+    float: right
+    opacity:.7
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ie-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+
+    &:hover
+      opacity:1
+
 .container
   max-width: 960px
   margin: 0 auto
   padding: 0 20px
+  clearfix()
+
+.footer
+  clear:both
+  text-align:center
+  padding-top:10px
+  margin-bottom:30px
+  border-bottom:1px solid #eee;
+
+  a
+    background:#fff
+    font-size:28px
+    color:#aaa
+    padding:0 10px
+    text-decoration:none
+    position:relative
+    top:15px
+
 
 .calendar
   counter-reset: li
@@ -117,13 +148,15 @@ body
     width: 20%
 
 @media (min-width: 700px)
+  .header .logo
+    display: block
+
   .calendar li
-    width: 14%
+    width: 14.28571428571429%
     
     a
       padding-top:5%
       padding-bottom:5%
 
-
     &:first-child
-      margin-left: 70%
+      margin-left: 71.42857142857145%
