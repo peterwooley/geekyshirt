@@ -184,6 +184,17 @@ body {
   height: 120px;
   overflow: hidden;
 }
+.calendar li.past {
+  opacity: 0.5;
+}
+.calendar li.current a {
+  height: 112px;
+  border: #215e8f solid 5px;
+  border-radius: 9px;
+}
+.calendar li.current:before {
+  border-top-right-radius: 8px;
+}
 .calendar li.need a {
   border-color: #aaa;
 }
