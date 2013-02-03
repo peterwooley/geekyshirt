@@ -182,7 +182,6 @@ body {
   border: 1px solid #676;
   border-radius: 4px;
   height: 120px;
-  overflow: hidden;
 }
 .calendar li.past {
   opacity: 0.5;
