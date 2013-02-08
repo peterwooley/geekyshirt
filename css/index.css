@@ -183,8 +183,11 @@ body {
   border-radius: 4px;
   height: 120px;
 }
-.calendar li.past {
-  opacity: 0.5;
+.calendar li.past span {
+  background-color: #b6b6b6;
+}
+.calendar li.me a {
+  background-position: 0 -50px;
 }
 .calendar li.current a {
   height: 112px;
