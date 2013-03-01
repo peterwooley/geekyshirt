@@ -31,7 +31,7 @@ html
     .header
       .container
         h1 Geeky Shirt February
-        h2 A different geeky shirt every day
+        h2 I wore a different geeky shirt every day
         a(href='http://peterwooley.com')
           img.logo(src='images/wooooooooley.png')
     .container
@@ -57,14 +57,14 @@ html
       - shirts.push({"title":"HJKL","image":"http://teespring.com/uploads/2175/shirtFront.jpg","link":"http://teespring.com/hjkl", me: "https://pbs.twimg.com/media/BDcyvmhCAAAal2s.jpg:large"})
       - shirts.push({"title":"Linux Cheat Shirt","image":"http://a.tgcdn.net/images/products/zoom/dabb_linux_cheat.jpg","link":"http://www.thinkgeek.com/product/dabb/", me: "https://pbs.twimg.com/media/BDhYGmrCcAAYTRD.jpg:large"})
       - shirts.push({"title":"Black Mesa","image":"http://www.jinx.com/content/prod/3160p_0c_1b.jpg","link":"http://www.jinx.com/p/half_life_2_black_mesa_premium_tee.html", me: "https://pbs.twimg.com/media/BDm5D7xCQAAXpZu.jpg:large"})
-      - shirts.push({"title":"Compiling","image":"http://cdn.shopify.com/s/files/1/0149/3544/products/compiling_shirt_4_1024x1024.jpg?9081","link":"http://store.xkcd.com/products/compiling"})
-      - shirts.push({"title":"Slide to Unlock","image":"https://d378wrp175kvqb.cloudfront.net/tanga/image/fetch/c_fit,w_450,h_450/https://s3.amazonaws.com/tanga-images/g2crpas9e6vg.png","link":"https://www.lolshirts.com/shirt/800f3668e8c/slide-to-unlock-t-shirt"})
-      - shirts.push({"title":"DZCFKWCRG","image":"http://6dollar.threadpitinc.netdna-cdn.com/images/P/Derek_Zoolander_Center_T_SHIRT_black.jpg","link":"http://6dollarshirts.com/t-shirts/Derek-Zoolander-Center-T-Shirt-p-12101.html"})
-      - shirts.push({"title":"Exploded iPhone","image":"http://www.teetrilogy.com/images/product/product-2.jpg","link":"http://www.teetrilogy.com/"})
-      - shirts.push({"title":"Turret Schematic","image":"http://a.tgcdn.net/images/products/additional/carousel/e8c5_aperture_turret.jpg","link":"http://www.thinkgeek.com/product/e8c5/"})
-      - shirts.push({"title":"Personal Soundtrack","image":"http://a.tgcdn.net/images/products/zoom/0a5b_personal_soundtrack_shirt.jpg","link":"http://www.thinkgeek.com/product/a5bf/"})
-      - shirts.push({"title":"NASA","image":"http://6dollar.threadpitinc.netdna-cdn.com/images/P/Nasa_T_SHIRT_royalheather.jpg","link":"http://6dollarshirts.com/t-shirts/NASA-p-11148.html"})
-      - shirts.push({"title":"BSOD","image":"https://d378wrp175kvqb.cloudfront.net/tanga/image/fetch/c_fit,w_450,h_450/https://s3.amazonaws.com/tanga-images/zmjwb8ve34qx.png","link":"https://www.lolshirts.com/shirt/f0ab97a7b83/blue-screen-of-death-t-shirt"})
+      - shirts.push({"title":"Compiling","image":"http://cdn.shopify.com/s/files/1/0149/3544/products/compiling_shirt_4_1024x1024.jpg?9081","link":"http://store.xkcd.com/products/compiling", me: "https://pbs.twimg.com/media/BDsFLL6CAAAR6h3.jpg:large"})
+      - shirts.push({"title":"Slide to Unlock","image":"https://d378wrp175kvqb.cloudfront.net/tanga/image/fetch/c_fit,w_450,h_450/https://s3.amazonaws.com/tanga-images/g2crpas9e6vg.png","link":"https://www.lolshirts.com/shirt/800f3668e8c/slide-to-unlock-t-shirt", me: "https://pbs.twimg.com/media/BDzgg2ECEAEqjxf.jpg:large"})
+      - shirts.push({"title":"DZCFKWCRG","image":"http://6dollar.threadpitinc.netdna-cdn.com/images/P/Derek_Zoolander_Center_T_SHIRT_black.jpg","link":"http://6dollarshirts.com/t-shirts/Derek-Zoolander-Center-T-Shirt-p-12101.html", me: "https://pbs.twimg.com/media/BDzg1P_CAAAqa59.jpg:large"})
+      - shirts.push({"title":"Exploded iPhone","image":"http://www.teetrilogy.com/images/product/product-2.jpg","link":"http://www.teetrilogy.com/", me: "https://pbs.twimg.com/media/BD7deiuCYAA-dma.jpg:large"})
+      - shirts.push({"title":"Turret Schematic","image":"http://a.tgcdn.net/images/products/additional/carousel/e8c5_aperture_turret.jpg","link":"http://www.thinkgeek.com/product/e8c5/", me: "https://pbs.twimg.com/media/BEA5ImpCYAAIeTR.jpg:large"})
+      - shirts.push({"title":"Personal Soundtrack","image":"http://a.tgcdn.net/images/products/zoom/0a5b_personal_soundtrack_shirt.jpg","link":"http://www.thinkgeek.com/product/a5bf/", me: "/images/personalsoundtrack.jpg"})
+      - shirts.push({"title":"NASA","image":"http://6dollar.threadpitinc.netdna-cdn.com/images/P/Nasa_T_SHIRT_royalheather.jpg","link":"http://6dollarshirts.com/t-shirts/NASA-p-11148.html", me: "https://pbs.twimg.com/media/BEKzJ0tCEAEXJgu.jpg:large"})
+      - shirts.push({"title":"BSOD","image":"https://d378wrp175kvqb.cloudfront.net/tanga/image/fetch/c_fit,w_450,h_450/https://s3.amazonaws.com/tanga-images/zmjwb8ve34qx.png","link":"https://www.lolshirts.com/shirt/f0ab97a7b83/blue-screen-of-death-t-shirt", me: "https://pbs.twimg.com/media/BEQBUhACAAAfT3o.jpg:large"})
       ol.calendar
         each shirt in shirts
           - var need = shirt.need ? "need" : ""
